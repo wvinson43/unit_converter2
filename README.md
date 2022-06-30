@@ -1,5 +1,4 @@
-# title(){return this.options.title||this.options.name}
-
+# This is my second unit converter, developed in coordination with coursework on the front end developer path with Scrimba.
 ## Supporting Scrimba
 
 Since 2017, we have created over 20 free courses on Scrimba, and we're going to
