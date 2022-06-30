@@ -1,3 +1,5 @@
+
+
 body {
     margin: 30px auto;
     padding: 0;
@@ -6,74 +8,43 @@ body {
     align-items: center;
     text-align:center;
     justify-content: center;
-    left: 0px;
-    top: 83px;
     background: #FBF7EE;  
+    font-family: 'Inter', sans-serif;
 }
 
-
-header {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 550px;
-    height: 285px;
-    left: 0px;
-    top: 0;   
-    font-family: "Inter";
-    font-style: normal;
-    color:#FFFFFF;
-    background: #6943FF;
-    
-}
-
-rectangle {
-    display:flex;
-    flex-direction: row;
-    width: 117px;
-    height: 83px;
-    border: solid 2px #B295FF;
-}
-
-.header_p {
-    margin: 0; 
-    padding: 70px;
-    font-size: 75px;
-}
-
-main {
-    text-align:center;
-    width: 550px;
-    height: 444px;
-    left: 0px;
-    top: 0px;
-    font-family: "Inter";
-    font-style: normal;
-    color: #1A1921;
-    background: #F4F4F4;
-}
+/* Typography */
 
 h1 {   
     padding-top: 10px;
     margin: 0;
+    font-weight: 800;
  }
  
  p {
-     color: #5A537B
+     color: #5A537B;
+     font-weight: 600;
  }
  
-button {
+
+.change-btn {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
     border-radius: 5px;
-} 
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 101px;
+    height: 42px;
+    margin: -10px 0px 35px 0px;
+    padding: 10px 15px;
+    background: #FFFFFF;
+    color: #1A1921;
+    font-family: inter;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500px;
+}
 
 section { 
     padding-top: 7.5px;
@@ -91,6 +62,7 @@ section {
 .summed_values {
     padding: 3.5px;
     color: #353535;
+    font-weight: 400;
 }
 
 #input-el{
@@ -106,7 +78,7 @@ section {
     justify-content: center;
     background: #6943FF;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 45px;
     box-sizing: border-box;
     border-radius: 7px;
@@ -116,22 +88,33 @@ section {
 ::placeholder { 
     color: white;
     opacity: 1; 
+    font-weight: 800;
 }
 
-.change-btn {
+/* layout */
+
+header {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     justify-content: center;
-    width: 101px;
-    height: 42px;
-    margin: 0 10px;
-    padding: 10px 15px;
-    background: #FFFFFF;
-    color: #1A1921;
-    font-family: inter;
+    width: 550px;
+    height: 285px; 
+    font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500px;
+    color:#FFFFFF;
+    background: #6943FF;
+    
 }
+
+main {
+    text-align:center;
+    width: 550px;
+    height: 444px;
+    font-family: "Inter";
+    font-style: normal;
+    color: #1A1921;
+    background: #F4F4F4;
+}
+

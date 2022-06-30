@@ -8,29 +8,24 @@ const massVal = document.getElementById("mass-val")
 convertBtn.addEventListener("click", calculate)
 
 function calculate() {
-    const user_input = inputEl.value
-    const met_feet = (user_input * 3.281).toFixed(3)
-    const feet_met = (user_input / 3.281).toFixed(3)
-    const lit_gal = (user_input * 3.785).toFixed(3)
-    const gal_lit = (user_input / 3.785).toFixed(3)
-    const kg_pound = (user_input * 2.204).toFixed(3)
-    const pound_kg = (user_input / 2.204).toFixed(3)
+    const userInput = inputEl.value
+    const metFeet = (userInput * 3.281).toFixed(3)
+    const feetMet = (userInput / 3.281).toFixed(3)
+    const litGal = (userInput * 0.264).toFixed(3)
+    const galLit = (userInput / 0.264).toFixed(3)
+    const kgPound = (userInput * 2.204).toFixed(3)
+    const poundKg = (userInput / 2.204).toFixed(3)
 
-const me=" meters"
-const fe=" feet"
-const li=" liters"
-const ga=" gallons"
-const kg=" kilograms"
-const po=" pounds"
+lengthVal.textContent = `${userInput} meters = ${metFeet} feet | ${userInput} feet = ${feetMet} meters`
 
-lengthVal.textContent = `${user_input} ${me} = ${met_feet} ${fe} | ${user_input} ${fe} = ${feet_met}${me}`
+volumeVal.textContent = `${userInput} gallons = ${galLit} liters | ${userInput} liters = ${litGal} gallons`
 
-volumeVal.textContent = `${user_input} ${ga} = ${gal_lit} ${li} | ${user_input} ${kg} = ${lit_gal} ${ga}`
-
-massVal.textContent = `${user_input} ${po} = ${kg_pound} ${kg} | ${user_input} ${kg} = ${pound_kg} ${po}`
+massVal.textContent = `${userInput} pounds = ${kgPound} kilograms | ${userInput} kilograms = ${poundKg} pounds`
 
 }
 
+inputEl.value = "?"
+calculate()
 
 /*
 1 meter = 3.281 feet
