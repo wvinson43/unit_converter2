@@ -16,11 +16,11 @@ function calculate() {
     const kgPound = (userInput * 2.204).toFixed(3)
     const poundKg = (userInput / 2.204).toFixed(3)
 
-lengthVal.textContent = `${userInput} meters = ${metFeet} feet | ${userInput} feet = ${feetMet} meters`
+lengthVal.textContent = `${userInput} meters = ${metFeet} feet |  ${userInput} feet = ${feetMet} meters`
 
-volumeVal.textContent = `${userInput} gallons = ${galLit} liters | ${userInput} liters = ${litGal} gallons`
+volumeVal.textContent = `${userInput} liters = ${litGal} gallons |  ${userInput} gallons = ${galLit} liters`
 
-massVal.textContent = `${userInput} pounds = ${kgPound} kilograms | ${userInput} kilograms = ${poundKg} pounds`
+massVal.textContent = `${userInput} kilograms = ${poundKg} pounds |  ${userInput} pounds = ${kgPound} kilograms`
 
 }
 
